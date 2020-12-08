@@ -1,0 +1,20 @@
+2020-12-08 21:45:56.562 +05:30 [INF] Now listening on: http://localhost:5000
+2020-12-08 21:45:56.701 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-08 21:45:56.703 +05:30 [INF] Hosting environment: Development
+2020-12-08 21:45:56.704 +05:30 [INF] Content root path: C:\Users\vivek\source\repos\AspNetCoreLoggingDemo
+2020-12-08 21:45:57.335 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sample  
+2020-12-08 21:45:57.428 +05:30 [INF] Executing endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-08 21:45:57.511 +05:30 [INF] Route matched with {action = "Get", controller = "Sample"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AspNetCoreLoggingDemo.Controllers.SampleController (AspNetCoreLoggingDemo).
+2020-12-08 21:45:57.518 +05:30 [INF] Succeeded Sample Get
+2020-12-08 21:45:57.524 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-12-08 21:45:57.553 +05:30 [INF] Executed action AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo) in 30.8742ms
+2020-12-08 21:45:57.561 +05:30 [INF] Executed endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-08 21:45:57.566 +05:30 [INF] Request finished in 238.0337ms 200 application/json; charset=utf-8
+2020-12-08 21:48:09.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sample  
+2020-12-08 21:48:09.548 +05:30 [INF] Executing endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-08 21:48:09.552 +05:30 [INF] Route matched with {action = "Get", controller = "Sample"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AspNetCoreLoggingDemo.Controllers.SampleController (AspNetCoreLoggingDemo).
+2020-12-08 21:48:09.555 +05:30 [INF] Succeeded Sample Get
+2020-12-08 21:48:09.556 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-12-08 21:48:09.558 +05:30 [INF] Executed action AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo) in 3.4792ms
+2020-12-08 21:48:09.567 +05:30 [INF] Executed endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-08 21:48:09.571 +05:30 [INF] Request finished in 28.8175ms 200 application/json; charset=utf-8
