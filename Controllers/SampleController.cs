@@ -12,11 +12,11 @@ namespace AspNetCoreLoggingDemo.Controllers
     [ApiController]
     public class SampleController : ControllerBase
     {
-        private readonly ILogger<SampleController> _logger;
+        private readonly ILogger _logger;
 
-        public SampleController(ILogger<SampleController> logger)
+        public SampleController(ILoggerFactory factory)
         {
-            _logger = logger;
+            _logger = factory.CreateLogger("Cat1");
         }
         [HttpGet]
         public IActionResult Get()
