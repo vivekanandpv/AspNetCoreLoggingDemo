@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreLoggingDemo.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreLoggingDemo.Controllers
@@ -21,7 +22,7 @@ namespace AspNetCoreLoggingDemo.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            this._logger.LogInformation("Sample: Get: OK");
+            this._logger.LogInformation(ApplicationLogEvents.GetAll, "Succeeded {param1} {param2}", "Sample", "Get");
             return Ok(new {Message = "Sample: OK"});
         }
     }
