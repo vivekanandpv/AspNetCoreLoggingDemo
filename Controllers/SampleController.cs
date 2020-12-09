@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using AspNetCoreLoggingDemo.Configuration;
 using Microsoft.Extensions.Logging;
@@ -22,7 +23,7 @@ namespace AspNetCoreLoggingDemo.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            this._logger.LogInformation(ApplicationLogEvents.GetAll, "Succeeded {param1} {param2}", "Sample", "Get");
+            this._logger.LogWarning(ApplicationLogEvents.GetAll, "Succeeded {param1} {param2} Current Thread: ({thread})", "Sample", "Get", Thread.CurrentThread.ManagedThreadId);
             return Ok(new {Message = "Sample: OK"});
         }
     }
