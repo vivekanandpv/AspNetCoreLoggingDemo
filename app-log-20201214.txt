@@ -1,0 +1,32 @@
+2020-12-14 11:46:22.784 +05:30 [INF] Now listening on: http://localhost:5000
+2020-12-14 11:46:22.905 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-14 11:46:22.908 +05:30 [INF] Hosting environment: Development
+2020-12-14 11:46:22.912 +05:30 [INF] Content root path: C:\Users\vivek\source\repos\AspNetCoreLoggingDemo
+2020-12-14 11:46:23.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sample  
+2020-12-14 11:46:23.555 +05:30 [INF] Executing endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 11:46:23.637 +05:30 [INF] Route matched with {action = "Get", controller = "Sample"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AspNetCoreLoggingDemo.Controllers.SampleController (AspNetCoreLoggingDemo).
+2020-12-14 11:46:23.644 +05:30 [WRN] Succeeded Sample Get Current Thread: (12)
+2020-12-14 11:46:23.658 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-12-14 11:46:23.703 +05:30 [INF] Executed action AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo) in 53.1878ms
+2020-12-14 11:46:23.711 +05:30 [INF] Executed endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 11:46:23.715 +05:30 [INF] Request finished in 302.7383ms 200 application/json; charset=utf-8
+2020-12-14 12:17:52.984 +05:30 [INF] Now listening on: http://localhost:5000
+2020-12-14 12:17:53.074 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-12-14 12:17:53.076 +05:30 [INF] Hosting environment: Development
+2020-12-14 12:17:53.078 +05:30 [INF] Content root path: C:\Users\vivek\source\repos\AspNetCoreLoggingDemo
+2020-12-14 12:17:53.734 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sample  
+2020-12-14 12:17:53.899 +05:30 [INF] Executing endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 12:17:54.004 +05:30 [INF] Route matched with {action = "Get", controller = "Sample"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AspNetCoreLoggingDemo.Controllers.SampleController (AspNetCoreLoggingDemo).
+2020-12-14 12:17:54.011 +05:30 [INF] Current Thread: (4)
+2020-12-14 12:17:54.031 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-12-14 12:17:54.068 +05:30 [INF] Executed action AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo) in 52.3014ms
+2020-12-14 12:17:54.072 +05:30 [INF] Executed endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 12:17:54.075 +05:30 [INF] Request finished in 355.7583ms 200 application/json; charset=utf-8
+2020-12-14 12:18:08.354 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/sample  
+2020-12-14 12:18:13.074 +05:30 [INF] Executing endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 12:18:13.077 +05:30 [INF] Route matched with {action = "Get", controller = "Sample"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller AspNetCoreLoggingDemo.Controllers.SampleController (AspNetCoreLoggingDemo).
+2020-12-14 12:18:13.083 +05:30 [INF] Current Thread: (5)
+2020-12-14 12:18:13.085 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-12-14 12:18:13.087 +05:30 [INF] Executed action AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo) in 4.2288ms
+2020-12-14 12:18:13.094 +05:30 [INF] Executed endpoint 'AspNetCoreLoggingDemo.Controllers.SampleController.Get (AspNetCoreLoggingDemo)'
+2020-12-14 12:18:13.098 +05:30 [INF] Request finished in 4744.8405ms 200 application/json; charset=utf-8

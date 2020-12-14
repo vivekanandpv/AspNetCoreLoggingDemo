@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AspNetCoreLoggingDemo.Configuration;
+using AspNetCoreLoggingDemo.LoggingProviders;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreLoggingDemo.Controllers
@@ -14,16 +15,16 @@ namespace AspNetCoreLoggingDemo.Controllers
     [ApiController]
     public class SampleController : ControllerBase
     {
-        private readonly ILogger _logger;
+        private readonly CustomLogger _customLogger;
 
-        public SampleController(ILoggerFactory factory)
+        public SampleController(CustomLogger customLogger)
         {
-            _logger = factory.CreateLogger("Cat1");
+            _customLogger = customLogger;
         }
         [HttpGet]
         public IActionResult Get()
         {
-            this._logger.LogWarning(ApplicationLogEvents.GetAll, "Succeeded {param1} {param2} Current Thread: ({thread})", "Sample", "Get", Thread.CurrentThread.ManagedThreadId);
+            this._customLogger.LogThreadInformation(Thread.CurrentThread.ManagedThreadId);
             return Ok(new {Message = "Sample: OK"});
         }
     }
