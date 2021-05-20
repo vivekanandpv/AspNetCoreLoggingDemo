@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
+using AspNetCoreLoggingDemo.Services;
 
 namespace AspNetCoreLoggingDemo.Controllers
 {
@@ -13,16 +14,18 @@ namespace AspNetCoreLoggingDemo.Controllers
     public class SampleController : ControllerBase
     {
         private readonly ILogger _logger;
+        private readonly SampleService _service;
 
-        public SampleController(ILoggerFactory factory)
+        public SampleController(ILoggerFactory factory, SampleService service)
         {
             _logger = factory.CreateLogger("Cat1");
+            _service = service;
         }
         [HttpGet]
         public IActionResult Get()
         {
             this._logger.LogInformation("Sample: Get: OK");
-            return Ok(new {Message = "Sample: OK"});
+            return Ok(new {Message = _service.GetMessage()});
         }
     }
 }
