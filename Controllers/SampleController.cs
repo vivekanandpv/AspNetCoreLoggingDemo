@@ -13,15 +13,16 @@ namespace AspNetCoreLoggingDemo.Controllers
     [ApiController]
     public class SampleController : ControllerBase
     {
-        private readonly ILogger _logger;
+        private readonly ILogger<SampleController> _logger;
 
-        public SampleController(ILoggerFactory factory)
+        public SampleController(ILogger<SampleController> logger)
         {
-            _logger = factory.CreateLogger("Cat1");
+            _logger = logger;
         }
         [HttpGet]
         public IActionResult Get()
         {
+            //   AspNetCoreLoggingDemo.Controllers.SampleController[2] -> [2] is eventId (GetAll=2), default is 0
             this._logger.LogInformation(ApplicationLogEvents.GetAll, "Succeeded {param1} {param2}", "Sample", "Get");
             return Ok(new { Message = "Sample: OK" });
         }
